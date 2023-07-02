@@ -1,0 +1,13 @@
+
+class Solution {
+
+	public static long Pow(int X, int N) {
+		if(N==0) return 1;
+		if(X==0) return 0;
+		if (N == 1) {
+            return X;
+        }
+		long ans=X*Pow(X,N-1);
+		return ans;
+	}
+}
